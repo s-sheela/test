@@ -1,0 +1,153 @@
+body {
+  margin-left:10%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d2ddec;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.box{
+  width:80%;
+  text-align:center;
+}
+.ip{
+  background-color: #ebf1ef;
+  color: rgb(39, 43, 94);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.btn{
+  background-color: #3f4753; 
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+}
+.btn:hover {
+  background-color: #95a2ae; 
+}
+.lbl{
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 6px;
+}
+.tbl{
+    width: 100%;
+    color:#223e69;
+    font-weight: bold;
+    align:center;
+    padding: 18px 20px;
+    border: 2px solid orangered;
+}
+.tbl th{
+  background-color: #eef5de;
+  font-size: 14px;
+  font-weight: bold;
+  height:30px;
+}
+.tbl th{
+  background-color: #eef5de;
+  font-size: 14px;
+  font-weight: bold;
+  color:rgb(41, 34, 89)
+}
+.tbl th td{
+    text-align: center;
+}
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;       
+  background-color: rgb(49, 52, 88); 
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  width:120px;
+  padding: 12px 28px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 80%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  z-index: -1;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.popupbox {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
